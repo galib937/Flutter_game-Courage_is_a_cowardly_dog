@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
           barrierX2 -= 0.05;
         }
       });
-      if (courageYaxis > 1) {
+      if (courageYaxis > 1 || courageYaxis <-1) {
         timer.cancel();
         gameHasStarted = false;
       }
